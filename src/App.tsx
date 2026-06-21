@@ -102,6 +102,10 @@ const skills = [
   'Redis',
   'Flask',
   'FastAPI',
+  'DynamoDB',
+  'MongoDB',
+  'GitHub Actions',
+  'Linux / Bash',
   'LangChain',
   'OpenAI API',
   'Pinecone',
@@ -472,7 +476,7 @@ function AboutSection() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-2.5">
-            {skills.slice(0, 12).map((skill) => (
+            {skills.map((skill) => (
               <span
                 key={skill}
                 className="rounded-full border border-[#D7E2EA]/20 px-3.5 py-2 text-xs font-semibold uppercase tracking-wider text-[#D7E2EA]/82"
