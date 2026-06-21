@@ -185,12 +185,21 @@ const projects = [
   },
   {
     number: '05',
-    name: 'Placeholder Project',
-    category: 'Full Stack',
+    name: 'Enterprise Document Intelligence Engine',
+    category: 'Gen AI / Azure Cloud',
     summary:
-      'This is a placeholder for your 5th project. Let me know the details and I will update it!',
-    impact: ['Key achievement 1', 'Key achievement 2'],
-    stack: ['React', 'Node.js'],
+      'A scalable data pipeline that ingests complex unstructured PDFs, uses Azure OpenAI for semantic entity extraction, and indexes the data into MongoDB for rapid structured querying.',
+    impact: ['Automated extraction of 50k+ daily documents', 'Reduced manual data entry time by 95%', 'Built scalable event triggers via Azure Functions'],
+    stack: ['Python', 'Azure OpenAI', 'Azure Functions', 'MongoDB', 'FastAPI'],
+  },
+  {
+    number: '06',
+    name: 'Serverless Auto-Review Bot',
+    category: 'DevOps / LLM Integration',
+    summary:
+      'An event-driven automated code review system built on GitHub Actions and AWS Serverless that analyzes PR diffs using LangChain and provides actionable security and performance feedback.',
+    impact: ['Caught 30% more vulnerabilities pre-merge', 'Reduced PR review latency by 2 hours', 'Fully serverless architecture reducing costs'],
+    stack: ['TypeScript', 'GitHub Actions', 'AWS Lambda', 'LangChain', 'OpenAI API'],
   },
 ];
 
