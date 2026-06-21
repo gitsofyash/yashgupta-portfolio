@@ -503,7 +503,7 @@ function ExperienceSection() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#B600A8]">
             Experience
           </p>
-          <h2 className="text-[clamp(3rem,10vw,9rem)] font-black uppercase leading-none tracking-tight">
+          <h2 className="hero-heading text-[clamp(2.5rem,5.5vw,5.5rem)] font-black uppercase leading-[0.9] tracking-tight">
             Work History
           </h2>
         </FadeIn>
@@ -644,7 +644,7 @@ function ContactSection() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#B600A8]">
               Contact
             </p>
-            <h2 className="hero-heading text-[clamp(3.2rem,10vw,9rem)] font-black uppercase leading-none tracking-tight">
+            <h2 className="hero-heading text-[clamp(2.5rem,5.5vw,5.5rem)] font-black uppercase leading-[0.9] tracking-tight">
               Let&apos;s Build
             </h2>
             <p className="mt-5 max-w-2xl text-lg font-light leading-relaxed text-[#D7E2EA]/76">
