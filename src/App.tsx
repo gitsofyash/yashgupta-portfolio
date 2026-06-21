@@ -373,8 +373,8 @@ function HeroSection() {
             <div className="absolute -inset-5 rounded-[3rem] bg-[#B600A8]/12 blur-3xl" />
             <div className="relative overflow-hidden rounded-[2.3rem] border border-[#D7E2EA]/18 bg-[#101012] shadow-[0_30px_110px_rgba(0,0,0,0.45)]">
               <img
-                src="https://api.dicebear.com/9.x/notionists/svg?seed=YashGupta&backgroundColor=0c0c0c&body=variant01&gesture=handUp"
-                alt="Yash Gupta professional avatar"
+                src="/avatar-pixar.png"
+                alt="Yash Gupta 3D avatar"
                 className="aspect-[0.9] w-full object-cover object-center"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0C0C0C] via-[#0C0C0C]/55 to-transparent p-5">
