@@ -185,21 +185,21 @@ const projects = [
   },
   {
     number: '05',
-    name: 'Enterprise Document Intelligence Engine',
-    category: 'Gen AI / Azure Cloud',
+    name: 'Distributed Multi-Agent Orchestration Engine',
+    category: 'Agentic AI / Azure Backend',
     summary:
-      'A scalable data pipeline that ingests complex unstructured PDFs, uses Azure OpenAI for semantic entity extraction, and indexes the data into MongoDB for rapid structured querying.',
-    impact: ['Automated extraction of 50k+ daily documents', 'Reduced manual data entry time by 95%', 'Built scalable event triggers via Azure Functions'],
-    stack: ['Python', 'Azure OpenAI', 'Azure Functions', 'MongoDB', 'FastAPI'],
+      'Built an asynchronous, event-driven engine where specialized AI agents autonomously collaborate to resolve complex engineering tickets. Integrated Azure OpenAI with vector-based shared memory.',
+    impact: ['Resolved 40% of L2 support tickets autonomously', 'Scaled to 1,000+ concurrent workflows using Kafka', 'Implemented dynamic tool-use and safe sandboxing'],
+    stack: ['Python', 'Azure OpenAI', 'Kafka', 'MongoDB', 'FastAPI', 'Docker'],
   },
   {
     number: '06',
-    name: 'Serverless Auto-Review Bot',
-    category: 'DevOps / LLM Integration',
+    name: 'Semantic Caching & LLM API Gateway',
+    category: 'Cloud Infrastructure / Backend',
     summary:
-      'An event-driven automated code review system built on GitHub Actions and AWS Serverless that analyzes PR diffs using LangChain and provides actionable security and performance feedback.',
-    impact: ['Caught 30% more vulnerabilities pre-merge', 'Reduced PR review latency by 2 hours', 'Fully serverless architecture reducing costs'],
-    stack: ['TypeScript', 'GitHub Actions', 'AWS Lambda', 'LangChain', 'OpenAI API'],
+      'Engineered a high-throughput proxy layer for enterprise LLM consumption. Implemented Redis and Pinecone for semantic caching of prompts, drastically reducing latency and token costs while providing central observability.',
+    impact: ['Reduced AWS LLM token costs by $15k/month', 'Decreased P99 latency from 4s to 200ms for cached hits', 'Built robust CI/CD pipelines with GitHub Actions'],
+    stack: ['TypeScript', 'AWS ECS', 'DynamoDB', 'Pinecone', 'Redis', 'GitHub Actions'],
   },
 ];
 
