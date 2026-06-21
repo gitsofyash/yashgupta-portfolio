@@ -183,6 +183,15 @@ const projects = [
     impact: ['Sub-second context retrieval', 'Reduced hallucinations with grounded responses', 'Deployed concurrent Flask API sessions'],
     stack: ['Python', 'LangChain', 'OpenAI API', 'Pinecone', 'Flask', 'AWS EC2'],
   },
+  {
+    number: '05',
+    name: 'Placeholder Project',
+    category: 'Full Stack',
+    summary:
+      'This is a placeholder for your 5th project. Let me know the details and I will update it!',
+    impact: ['Key achievement 1', 'Key achievement 2'],
+    stack: ['React', 'Node.js'],
+  },
 ];
 
 const capabilities = [
@@ -538,6 +547,9 @@ function ExperienceSection() {
 }
 
 function ProjectsSection() {
+  const [showAll, setShowAll] = useState(false);
+  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+
   return (
     <section
       id="projects"
@@ -549,7 +561,7 @@ function ProjectsSection() {
           <SectionHeading kicker="Projects" title="Selected Engineering Work" align="left" />
         </FadeIn>
         <div className="mt-14 grid gap-5 lg:grid-cols-2">
-          {projects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <FadeIn key={project.name} delay={index * 0.06}>
               <article className="group flex h-full flex-col rounded-[2rem] border border-[#D7E2EA]/16 bg-[#D7E2EA]/5 p-5 transition duration-300 hover:-translate-y-1 hover:border-[#D7E2EA]/35 sm:p-7">
                 <div className="mb-8 flex items-start justify-between gap-5">
@@ -583,6 +595,18 @@ function ProjectsSection() {
             </FadeIn>
           ))}
         </div>
+        {projects.length > 4 && (
+          <FadeIn>
+            <div className="mt-12 flex justify-center">
+              <button
+                onClick={() => setShowAll(!showAll)}
+                className="group inline-flex items-center gap-2 rounded-full border border-[#D7E2EA]/20 px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-[#D7E2EA] transition hover:bg-[#D7E2EA]/10"
+              >
+                {showAll ? 'Show Less' : 'Show More Projects'}
+              </button>
+            </div>
+          </FadeIn>
+        )}
       </div>
     </section>
   );
