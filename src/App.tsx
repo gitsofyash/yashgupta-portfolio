@@ -269,12 +269,15 @@ function SectionHeading({
   title: string;
   align?: 'left' | 'center';
 }) {
+  const isCenter = align === 'center';
   return (
-    <div className={align === 'center' ? 'mx-auto max-w-5xl text-center' : 'max-w-5xl'}>
+    <div className={isCenter ? 'mx-auto max-w-5xl text-center' : 'max-w-5xl'}>
       <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#B600A8]">
         {kicker}
       </p>
-      <h2 className="hero-heading text-[clamp(3rem,10vw,9rem)] font-black uppercase leading-none tracking-tight">
+      <h2 className={`hero-heading font-black uppercase leading-[0.9] tracking-tight ${
+        isCenter ? 'text-[clamp(3rem,10vw,9rem)]' : 'text-[clamp(2.5rem,5.5vw,5.5rem)]'
+      }`}>
         {title}
       </h2>
     </div>
