@@ -62,6 +62,7 @@ const skillLogos = [
   {
     name: 'Kafka',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg',
+    invertDark: true,
   },
   {
     name: 'PostgreSQL',
@@ -74,6 +75,7 @@ const skillLogos = [
   {
     name: 'Flask',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
+    invertDark: true,
   },
   {
     name: 'FastAPI',
@@ -453,7 +455,14 @@ function LogoRow({
           key={`${item.name}-${index}`}
           className="flex h-28 w-36 shrink-0 flex-col items-center justify-center gap-3 rounded-3xl border border-[#D7E2EA]/14 bg-[#D7E2EA]/5 p-5 text-center shadow-[0_18px_70px_rgba(0,0,0,0.22)] sm:h-32 sm:w-44"
         >
-          <img src={item.src} alt={`${item.name} logo`} className="h-10 w-10 object-contain sm:h-12 sm:w-12" />
+          <img 
+            src={item.src} 
+            alt={`${item.name} logo`} 
+            className={`h-10 w-10 object-contain sm:h-12 sm:w-12 ${
+              // @ts-expect-error - invertDark is optional
+              item.invertDark ? 'brightness-0 invert opacity-90' : ''
+            }`} 
+          />
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#D7E2EA]/80">
             {item.name}
           </span>
