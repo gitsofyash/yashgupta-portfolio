@@ -469,7 +469,6 @@ function LogoRow({
             src={item.src} 
             alt={`${item.name} logo`} 
             className={`h-10 w-10 object-contain sm:h-12 sm:w-12 ${
-              // @ts-expect-error - invertDark is optional
               item.invertDark ? 'brightness-0 invert opacity-90' : ''
             }`} 
           />
