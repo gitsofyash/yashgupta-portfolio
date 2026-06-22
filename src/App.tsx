@@ -29,7 +29,7 @@ const profile = {
   github: 'https://github.com/gitsofyash',
   linkedin: 'https://www.linkedin.com/in/yash-gupta2601',
   gssoc: 'https://gssoc.girlscript.org/profile/76a55d02-90b7-43d6-a2cc-9bedf1b445a8',
-  cal: 'https://cal.com/yashgupta', // Replace with your actual cal.com or calendly link
+  cal: 'https://cal.com/yash-gupta-2601',
 };
 
 const skillLogos = [
