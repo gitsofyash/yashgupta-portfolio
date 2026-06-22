@@ -2,6 +2,7 @@ import {
   ArrowUpRight,
   BadgeCheck,
   BrainCircuit,
+  Calendar,
   Cloud,
   Code2,
   Database,
@@ -28,6 +29,7 @@ const profile = {
   github: 'https://github.com/gitsofyash',
   linkedin: 'https://www.linkedin.com/in/yash-gupta2601',
   gssoc: 'https://gssoc.girlscript.org/profile/76a55d02-90b7-43d6-a2cc-9bedf1b445a8',
+  cal: 'https://cal.com/yashgupta', // Replace with your actual cal.com or calendly link
 };
 
 const skillLogos = [
@@ -385,6 +387,14 @@ function HeroSection() {
           <div className="mt-8 flex flex-wrap gap-3">
             <ContactButton />
             <a
+              href={profile.cal}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#D7E2EA]/35 bg-[#D7E2EA]/10 px-7 py-3.5 text-sm font-semibold uppercase tracking-widest text-[#D7E2EA] transition hover:bg-[#D7E2EA]/20"
+            >
+              Book a Call <Calendar size={18} />
+            </a>
+            <a
               href={profile.github}
               target="_blank"
               rel="noreferrer"
@@ -695,6 +705,7 @@ function ContactSection() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="flex flex-wrap gap-3">
+              <Social href={profile.cal} label="Book a Call" icon={Calendar} />
               <Social href={`mailto:${profile.email}`} label="Email" icon={Mail} />
               <Social href={profile.github} label="GitHub" icon={Github} />
               <Social href={profile.linkedin} label="LinkedIn" icon={Linkedin} />
